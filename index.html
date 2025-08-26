@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://www.ixbt.com/img/n1/news/2020/6/6/2019-08-09-image-19_large.jpg') no-repeat center center/cover;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-align: center;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-weight: bold;
+            color: yellow;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        .title-box {
+            background: linear-gradient(to right, #f8e71c, #f72c2c);
+            padding: 12px 24px;
+            display: inline-block;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+            margin-bottom: 20px;
+        }
+
+        .title-box span {
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        .main-title {
+            font-size: 60px;
+            color: yellow;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px black;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+        }
+
+        /* Имитация эффекта капель краски */
+        .main-title::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 10px;
+            background: url('paint-drip.png') repeat-x;
+            background-size: contain;
+            margin-top: -5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div>BACKGROUND</div>
+        <div>BACKGROUND-REP</div>
+        <div>BACKGROUND-REPEAT</div>
+        <div>LINEAR-GRADIENT</div>
+    </div>
+
+    <div class="title-box">
+        <span>PLAYERUNKNOWN'S</span>
+    </div>
+
+    <div class="main-title">
+        BATTLEGROUNDS
+    </div>
+</body>
+</html>
